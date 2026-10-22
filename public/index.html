@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Viral belum tentu valid</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Viral belum tentu valid.</h1>
+  <p>Tempel pesan yang kamu terima. Kami cocokkan dengan klaim yang sudah diperiksa dan tunjukkan tanda-tanda hoaks sebelum kamu membagikannya.</p>
+</header>
+<main>
+  <section>
+    <form id="f">
+      <div class="bubble">
+        <span class="fwd">Diteruskan berkali-kali</span>
+        <label class="sr" for="t">Pesan yang ingin diperiksa</label>
+        <textarea id="t" maxlength="5000" rows="6" placeholder="Tempel pesan atau tautan di sini…" required></textarea>
+      </div>
+      <button type="submit">Periksa pesan</button>
+    </form>
+    <div id="hasil" aria-live="polite"></div>
+  </section>
+  <section>
+    <h2>Hoaks yang ditemukan Komdigi</h2>
+    <div id="stat"></div>
+  </section>
+  <section>
+    <h2>Lapor hoaks baru</h2>
+    <form id="r">
+      <label for="rt">Isi pesan</label><textarea id="rt" maxlength="5000" rows="4" required></textarea>
+      <label for="ru">Tautan asal (opsional)</label><input id="ru" type="url" placeholder="https://">
+      <button type="submit">Kirim laporan</button>
+      <p id="rmsg" class="muted" aria-live="polite"></p>
+    </form>
+  </section>
+</main>
+<footer>Hasil di sini bantuan awal, bukan putusan akhir. Untuk kepastian, cek juga turnbackhoax.id dan media terpercaya.</footer>
+<script src="app.js"></script>
+</body>
+</html>

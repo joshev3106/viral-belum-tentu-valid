@@ -1,0 +1,12 @@
+{
+  "name": "viral-belum-tentu-valid",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": { "start": "node server.js", "dev": "node --watch server.js" },
+  "dependencies": {
+    "better-sqlite3": "^11.3.0",
+    "express": "^4.21.0",
+    "express-rate-limit": "^7.4.0",
+    "helmet": "^8.0.0"
+  }
+}
